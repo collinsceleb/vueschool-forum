@@ -1,13 +1,18 @@
 <script setup>
+import sourceData from "@/data.json"
+console.log(sourceData);
 defineProps({
   msg: {
     type: String,
     required: true
   }
 })
+
 </script>
 
 <template>
+  
+  <div>{{ sourceData.threads }}</div>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
