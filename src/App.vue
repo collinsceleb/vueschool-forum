@@ -1,18 +1,22 @@
 <script setup>
-import PageHome from "@/components/PageHome.vue";
+// eslint-disable-next-line no-unused-vars
+import { RouterLink, RouterView } from 'vue-router'
+// import PageHome from "@/components/PageHome.vue";
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <page-home />
+    <div class="container">
+<!--      <page-home />-->
+      <RouterView />
     </div>
   </header>
+
 </template>
 
-<style scoped>
+<style>
 @import "assets/style.css";
 
 </style>
